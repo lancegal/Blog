@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="52bbdd47-770b-4811-847a-45d3319853e0" name="student@KOMP070 2015-05-04 12:30:32" runUser="NMKZLLAB\student" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="31046817-227f-4161-9a97-5d34efa999fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="student_KOMP070 2015-05-04 12_30_32">
+      <DeploymentItem filename="D:\Krzysiek\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\YamlDotNet.Core.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\TDD.DbTestHelpers.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\YamlDotNet.RepresentationModel.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T12:30:32.2050984+02:00" queuing="2015-05-04T12:30:32.2460984+02:00" start="2015-05-04T12:30:32.2490984+02:00" finish="2015-05-04T12:30:33.1170984+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetAllPost_OnePostInDb_ReturnOnePost" storage="d:\krzysiek\blog\blog.dal.tests\bin\debug\blog.dal.tests.dll" id="8eb3fc89-a933-3141-9fc4-10d31ead6588">
+      <Execution id="e0ba463f-5851-4535-aa48-4958b6b48abe" />
+      <TestMethod codeBase="D:/Krzysiek/Blog/Blog.DAL.Tests/bin/Debug/Blog.DAL.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Blog.DAL.Tests.RepositoryTests, Blog.DAL.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllPost_OnePostInDb_ReturnOnePost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8eb3fc89-a933-3141-9fc4-10d31ead6588" executionId="e0ba463f-5851-4535-aa48-4958b6b48abe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e0ba463f-5851-4535-aa48-4958b6b48abe" testId="8eb3fc89-a933-3141-9fc4-10d31ead6588" testName="GetAllPost_OnePostInDb_ReturnOnePost" computerName="KOMP070" duration="00:00:00.7003559" startTime="2015-05-04T12:30:32.2500984+02:00" endTime="2015-05-04T12:30:33.0640984+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0ba463f-5851-4535-aa48-4958b6b48abe">
+      <Output>
+        <DebugTrace>Constr
+SetUp
+Applying fixtures
+D:\Krzysiek\Blog\Blog.DAL.Tests\bin\Debug\Fixtures\posts.yml
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method Blog.DAL.Tests.RepositoryTests.BaseSetUp threw exception. System.Exception: System.Exception: Cannot deserialize YAML file. See inner exception. ---&gt; System.Exception: Specified file posts.yml does not exist in specifiled folder Fixtures. Full path: D:\Krzysiek\Blog\Blog.DAL.Tests\bin\Debug\Fixtures\posts.yml..</Message>
+          <StackTrace>    at TDD.DbTestHelpers.Helpers.FileHelper.GetAllYamlConfiguration(IEnumerable`1 yamlFilesNames, String yamlFolderName) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 87
+   at TDD.DbTestHelpers.Helpers.FileHelper.GetFixutresFromYaml(Type fixtureType, String yamlFolderName, IEnumerable`1 yamlFullFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 69
+ --- End of inner exception stack trace ---
+    at TDD.DbTestHelpers.Helpers.FileHelper.GetFixutresFromYaml(Type fixtureType, String yamlFolderName, IEnumerable`1 yamlFullFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 73
+   at TDD.DbTestHelpers.Helpers.FileHelper.FillFixturesFileFiles(Type fixtureType, DbContext context, String yamlFolderName, IEnumerable`1 yamlFullFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 42
+   at TDD.DbTestHelpers.Helpers.FileHelper.FillFixturesFileFiles[TFixtureType](DbContext context, String yamlFolderName, IEnumerable`1 yamlFilesNames) in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Helpers\FileHelper.cs:line 37
+   at TDD.DbTestHelpers.Yaml.YamlDbFixture`2.FillFixtures() in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Yaml\YamlDbFixture.cs:line 38
+   at TDD.DbTestHelpers.Core.DbBaseTest`1.ApplyFixtures() in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Core\DbBaseTest.cs:line 45
+   at TDD.DbTestHelpers.Core.DbBaseTest`1.BaseSetUp() in E:\Studia\_Asystentura\6.sem_letni_2012-2013\SAB\lab\TeamCity\TDD.Blog-master\TDD.DbTestHelpers\Core\DbBaseTest.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

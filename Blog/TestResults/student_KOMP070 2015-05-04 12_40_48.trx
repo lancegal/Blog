@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="83d7e04b-7d16-4a3f-beba-68fdcad63032" name="student@KOMP070 2015-05-04 12:40:48" runUser="NMKZLLAB\student" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="31046817-227f-4161-9a97-5d34efa999fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="student_KOMP070 2015-05-04 12_40_48">
+      <DeploymentItem filename="D:\Krzysiek\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\YamlDotNet.Core.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\TDD.DbTestHelpers.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\YamlDotNet.RepresentationModel.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T12:40:48.8540984+02:00" queuing="2015-05-04T12:40:48.9000984+02:00" start="2015-05-04T12:40:48.9040984+02:00" finish="2015-05-04T12:40:51.2060984+02:00" />
+  <ResultSummary outcome="Warning">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="KOMP070" outcome="Warning" timestamp="2015-05-04T12:40:48.9000984+02:00">
+        <Text>Deployment is currently disabled. The deployment item 'D:\Krzysiek\Blog\Blog.DAL.Tests\Fixtures\posts.yml' on test 'Blog.DAL.Tests.RepositoryTests.AddPost_NewPostInDb_ReturnOneMorePost' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddPost_NewPostInDb_ReturnOneMorePost" storage="d:\krzysiek\blog\blog.dal.tests\bin\debug\blog.dal.tests.dll" id="2c7d86e8-c8cd-b412-dd8d-81983dfc7dd5">
+      <DeploymentItems>
+        <DeploymentItem filename="D:\Krzysiek\Blog\Blog.DAL.Tests\Fixtures\posts.yml" />
+      </DeploymentItems>
+      <Execution id="1d5507c2-b51d-45f2-99c2-7dc242e1965c" />
+      <TestMethod codeBase="D:/Krzysiek/Blog/Blog.DAL.Tests/bin/Debug/Blog.DAL.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Blog.DAL.Tests.RepositoryTests, Blog.DAL.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddPost_NewPostInDb_ReturnOneMorePost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2c7d86e8-c8cd-b412-dd8d-81983dfc7dd5" executionId="1d5507c2-b51d-45f2-99c2-7dc242e1965c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1d5507c2-b51d-45f2-99c2-7dc242e1965c" testId="2c7d86e8-c8cd-b412-dd8d-81983dfc7dd5" testName="AddPost_NewPostInDb_ReturnOneMorePost" computerName="KOMP070" duration="00:00:00.6722743" startTime="2015-05-04T12:40:48.9050984+02:00" endTime="2015-05-04T12:40:49.6930984+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d5507c2-b51d-45f2-99c2-7dc242e1965c">
+      <Output>
+        <DebugTrace>Constr
+SetUp
+Applying fixtures
+D:\Krzysiek\Blog\Blog.DAL.Tests\bin\Debug\Fixtures\posts.yml
+FixtureSetUp
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

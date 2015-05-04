@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="60f8f1f5-60de-4f95-b1df-92db61e6124b" name="student@KOMP070 2015-05-04 12:47:20" runUser="NMKZLLAB\student" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="31046817-227f-4161-9a97-5d34efa999fb">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="student_KOMP070 2015-05-04 12_47_20">
+      <DeploymentItem filename="D:\Krzysiek\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\YamlDotNet.Core.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\TDD.DbTestHelpers.dll" />
+      <DeploymentItem filename="D:\Krzysiek\Blog\packages\DbTestHelpers\YamlDotNet.RepresentationModel.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T12:47:20.4930984+02:00" queuing="2015-05-04T12:47:21.3990984+02:00" start="2015-05-04T12:47:21.5120984+02:00" finish="2015-05-04T12:47:40.6010984+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="KOMP070" outcome="Warning" timestamp="2015-05-04T12:47:20.5450984+02:00">
+        <Text>Deployment is currently disabled. The deployment item 'D:\Krzysiek\Blog\Blog.DAL.Tests\Fixtures\posts.yml' on test 'Blog.DAL.Tests.RepositoryTests.AddPost_NewPostInDb_ReturnOneMorePost' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddPost_NewPostInDb_ReturnOneMorePost" storage="d:\krzysiek\blog\blog.dal.tests\bin\debug\blog.dal.tests.dll" id="2c7d86e8-c8cd-b412-dd8d-81983dfc7dd5">
+      <DeploymentItems>
+        <DeploymentItem filename="D:\Krzysiek\Blog\Blog.DAL.Tests\Fixtures\posts.yml" />
+      </DeploymentItems>
+      <Execution id="c771d4f8-e827-405d-854c-0e9acb943ea7" />
+      <TestMethod codeBase="D:/Krzysiek/Blog/Blog.DAL.Tests/bin/Debug/Blog.DAL.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Blog.DAL.Tests.RepositoryTests, Blog.DAL.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddPost_NewPostInDb_ReturnOneMorePost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2c7d86e8-c8cd-b412-dd8d-81983dfc7dd5" executionId="c771d4f8-e827-405d-854c-0e9acb943ea7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c771d4f8-e827-405d-854c-0e9acb943ea7" testId="2c7d86e8-c8cd-b412-dd8d-81983dfc7dd5" testName="AddPost_NewPostInDb_ReturnOneMorePost" computerName="KOMP070" duration="00:00:16.4513874" startTime="2015-05-04T12:47:21.6110984+02:00" endTime="2015-05-04T12:47:39.0180984+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c771d4f8-e827-405d-854c-0e9acb943ea7">
+      <Output>
+        <DebugTrace>Constr
+SetUp
+Applying fixtures
+D:\Krzysiek\Blog\Blog.DAL.Tests\bin\Debug\Fixtures\posts.yml
+FixtureSetUp
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method Blog.DAL.Tests.RepositoryTests.AddPost_NewPostInDb_ReturnOneMorePost threw exception: 
+System.ArgumentException: Post do not have all fields</Message>
+          <StackTrace>    at Blog.DAL.Repository.BlogRepository.AddPost(Post post) in D:\Krzysiek\Blog\Blog.DAL\Repository\BlogRepository.cs:line 25
+   at Blog.DAL.Tests.RepositoryTests.AddPost_NewPostInDb_ReturnOneMorePost() in D:\Krzysiek\Blog\Blog.DAL.Tests\RepositoryTests.cs:line 53
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
